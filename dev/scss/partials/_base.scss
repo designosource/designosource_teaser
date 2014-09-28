@@ -1,0 +1,62 @@
+body {
+	color: #333;
+	font-family: "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	overflow: hidden;
+}
+
+/* Background video */
+#video-wrapper video {
+	background-color: #ccc;
+	background-image: url("../assets/images/designo_teaser.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: auto;
+	left: 50%;
+	min-height: 100%;
+	min-width: 100%;
+	position: fixed;
+	top: 50%;
+	width: auto;
+	z-index: -100;
+	@include transform(translate(-50%, -50%));
+}
+
+/* Content */
+#content {
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	@include transform(translate(-50%, -80%));
+}
+
+#content h1 {
+	font-size: 4em;
+	margin: 0;
+}
+
+/* Mailchimp form */
+form {
+	margin-top: 4em;
+
+	p {
+		color: #444;
+		font-size: 0.9em;
+	}
+
+	input {
+		border-radius: 3px;
+		border-style: none;
+		font-size: 1em;
+		padding: 0.5em 1em;
+	}
+
+	input[type="submit"] {
+		background-color: #ff5649;
+		color: #fff;
+	}
+
+	input[type="submit"]:hover {
+		background-color: #e63e31;
+	}
+}
