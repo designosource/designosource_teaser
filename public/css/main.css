@@ -356,12 +356,12 @@ th {
 
 body {
   color: #333;
-  font-family: "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden; }
 
 /* Background video */
 #video-wrapper video {
-  background-color: #ccc;
+  background-color: #fff;
   background-image: url("../assets/images/designo_teaser.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -393,6 +393,7 @@ body {
 
 #content h1 {
   font-size: 4em;
+  font-weight: 800;
   margin: 0; }
 
 /* Mailchimp form */
