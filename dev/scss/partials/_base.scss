@@ -57,13 +57,23 @@ form {
 
 	input {
 		border-radius: 3px;
-		border-style: none;
+		border-style: solid;
+		border-width: 1px;
 		font-size: 1em;
 		padding: 0.5em 1em;
 	}
 
+	input:focus {
+		outline: 0;
+	}
+
+	input[type="email"] {
+		border-color: #ddd;
+	}
+
 	input[type="submit"] {
 		background-color: #ff5649;
+		border-color: darken(#ff5649, 3%);
 		color: #fff;
 	}
 
