@@ -3,11 +3,13 @@ $('form').ajaxChimp({
 });
 
 function callbackChimp (resp) {
+    var feedback = "";
+
     if (resp.result === 'success') {
-        $('#feedback').html("Bedankt voor je inschrijving! Je ontvangt zo dadelijk een bevestigingsmail");
+        feedback = "Bedankt voor je inschrijving! Je ontvangt zo dadelijk een bevestigingsmail";
     }
     else {
-    	var feedback = resp.msg;
+    	feedback = resp.msg;
 
     	switch(resp.msg) {
     		case '0 - Please enter a value':
@@ -18,7 +20,9 @@ function callbackChimp (resp) {
     			feedback = "Een e-mailadres moet een @ teken bevatten";
     		break;
     	}
-
-    	$('#feedback').html(feedback);
     }
+
+    $('#feedback').fadeOut(function(){
+        $('#feedback').fadeIn().html(feedback);
+    });
 }

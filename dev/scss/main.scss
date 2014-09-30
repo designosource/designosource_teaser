@@ -1,5 +1,11 @@
 @import "bourbon/bourbon";
 
+// Core variables and mixins
+@import 'partials/variables';
+
+// Reset
 @import 'partials/normalize';
+
+// Core CSS
 @import 'partials/base';
 @import 'partials/animations';
