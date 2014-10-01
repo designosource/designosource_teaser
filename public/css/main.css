@@ -420,7 +420,7 @@ body {
   left: 50%;
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 250px;
   width: 90%;
   -webkit-transform: translate(-50%, -80%);
   -moz-transform: translate(-50%, -80%);
@@ -502,6 +502,9 @@ form {
   form p {
     color: #444;
     font-size: 0.9em; }
+  form p#feedback {
+    color: #ff483a;
+  }
     @media screen and (min-width: 768px) {
       form p {
         font-size: 1em; } }
@@ -610,4 +613,10 @@ form {
     animation-fill-mode: forwards;
     -webkit-animation-duration: 1.8s;
     -moz-animation-duration: 1.8s;
-    animation-duration: 1.8s; } }
+    animation-duration: 1.8s; } 
+
+  }
+@media screen and (min-width: 350px) {
+    #content{
+    top: 50%;}
+}
