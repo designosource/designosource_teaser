@@ -1,4 +1,4 @@
-/* @include keyframes(fadeIn) {
+@include keyframes(fadeIn) {
 	from {
 		opacity: 0;
 		@include transform(translateY(-1em));
@@ -8,6 +8,8 @@
 		@include transform(translateY(0));
 	}
 }
+
+@include mq-tablet  { 
 
 #content {
 
@@ -19,12 +21,22 @@
 	}
 
 	#titles {
-		@include animation-delay(10s);
+		@include animation-delay(6s);
 		@include animation-duration(1.8s);
 	}
 
 	form {
-		@include animation-delay(10.4s);
+		@include animation-delay(6.4s);
 		@include animation-duration(1.6s);
 	}
-} */
+}
+
+#socmedicons {
+	opacity: 0;
+	@include animation(fadeIn 1 ease);
+	@include animation-delay(6.4s);
+	@include animation-fill-mode(forwards);
+	@include animation-duration(1.8s);
+}
+
+}
