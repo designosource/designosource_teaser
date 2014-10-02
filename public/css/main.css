@@ -421,12 +421,17 @@ body {
   position: absolute;
   text-align: center;
   top: 250px;
-  width: 90%;
+  background-color: transparent;
+  width: 100%;
   -webkit-transform: translate(-50%, -80%);
   -moz-transform: translate(-50%, -80%);
   -ms-transform: translate(-50%, -80%);
   -o-transform: translate(-50%, -80%);
   transform: translate(-50%, -80%); }
+
+  #content form{
+  width: 90%;
+  margin:0 auto;}
 
 #content h1 {
   font-size: 2.6em;
@@ -502,8 +507,11 @@ form {
   form p {
     color: #444;
     font-size: 0.9em; }
-  form p#feedback {
+  form #feedback p.error {
     color: #ff483a;
+  }
+  form #feedback p.succes {
+    color: #57b955;
   }
     @media screen and (min-width: 768px) {
       form p {
@@ -618,5 +626,10 @@ form {
   }
 @media screen and (min-width: 350px) {
     #content{
-    top: 50%;}
+    top: 50%;
+    width: 100%;}
+
+    #content form{
+    width: 100%;
+    margin:0 auto;}
 }
